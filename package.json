@@ -2,7 +2,7 @@
   "name": "my-react-app",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://alisaneuber.github.io/website-react/",
+  "homepage": "https://alisaneuber.github.io/website-react",
   "type": "module",
   "scripts": {
     "dev": "vite",
