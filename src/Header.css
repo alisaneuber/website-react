@@ -21,6 +21,7 @@
 }
 
 .navbar-right {
+  display: flex;
   align-items: right;
   font-size: 1.5rem;
 }
@@ -29,7 +30,6 @@
   color: #272932;
   margin-left: 20px;
   margin-right: 20px;
-  text-decoration: none;
 }
 
 .navbar-link:hover {

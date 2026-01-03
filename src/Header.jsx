@@ -18,10 +18,10 @@ function Header() {
                <h1>{t('description.header_left')}</h1>
             </div>
             <nav className="navbar-right">
-               <div className="navbar-link"><Link to="/">{t('description.header_home')}</Link></div>
-               <div className="navbar-link"><Link to="/portfolio">{t('description.header_portfolio')}</Link></div>
-               <div className="navbar-link"><Link to="/about">{t('description.header_aboutme')}</Link></div>
-               <div className="navbar-link"><Link to="/contact">{t('description.header_contact')}</Link></div>
+               <Link to="/" style={{ textDecoration: 'none' }}><div className="navbar-link">{t('description.header_home')}</div></Link>
+               <Link to="/portfolio" style={{ textDecoration: 'none' }}><div className="navbar-link">{t('description.header_portfolio')}</div></Link>
+               <Link to="/about" style={{ textDecoration: 'none' }}><div className="navbar-link">{t('description.header_aboutme')}</div></Link>
+               <Link to="/contact" style={{ textDecoration: 'none' }}><div className="navbar-link">{t('description.header_contact')}</div></Link>
             </nav>
             <div className="navbar-language">
                   <button className="navbar-language-button" type="submit" onClick={() => i18n.changeLanguage("en")}>
