@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header />
-      <Router>
+      <Router basename="/website-react">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
