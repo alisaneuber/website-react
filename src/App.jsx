@@ -12,10 +12,10 @@ function App() {
       <Header />
       <Router>
         <Routes>
-          <Route path="website-react/" element={<Home />} />
-          <Route path="website-react/portfolio" element={<Portfolio />} />
-          <Route path="website-react/about" element={<AboutMe />} />
-          <Route path="website-react/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
       <Footer />
