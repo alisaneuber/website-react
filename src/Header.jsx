@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 import './Header.css';
 import enImg from './assets/en.png';
 import deImg from './assets/de.png';
@@ -17,10 +18,10 @@ function Header() {
                <h1>{t('description.header_left')}</h1>
             </div>
             <nav className="navbar-right">
-               <a href="/">{t('description.header_home')}</a>
-               <a href="/portfolio">{t('description.header_portfolio')}</a>
-               <a href="/about">{t('description.header_aboutme')}</a>
-               <a href="/contact">{t('description.header_contact')}</a>
+               <div className="navbar-link"><Link to="/">{t('description.header_home')}</Link></div>
+               <div className="navbar-link"><Link to="/portfolio">{t('description.header_portfolio')}</Link></div>
+               <div className="navbar-link"><Link to="/about">{t('description.header_aboutme')}</Link></div>
+               <div className="navbar-link"><Link to="/contact">{t('description.header_contact')}</Link></div>
             </nav>
             <div className="navbar-language">
                   <button className="navbar-language-button" type="submit" onClick={() => i18n.changeLanguage("en")}>

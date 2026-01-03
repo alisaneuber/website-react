@@ -25,14 +25,14 @@
   font-size: 1.5rem;
 }
 
-.navbar-right a {
+.navbar-link {
   color: #272932;
   margin-left: 20px;
   margin-right: 20px;
   text-decoration: none;
 }
 
-.navbar-right a:hover {
+.navbar-link:hover {
   color: #7b54d5;
 }
 

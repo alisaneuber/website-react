@@ -9,8 +9,9 @@ import Contact from './Contact';
 function App() {
   return (
     <>
-      <Header />
+      
       <Router >
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
