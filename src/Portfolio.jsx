@@ -7,6 +7,8 @@ import inclusiveGamingImg from './assets/inclusivegaming.png';
 import blindshellImg from './assets/blindshell.png';
 import zooImg from './assets/zoo.png';
 import ghost2Img from './assets/ghost2.png';
+import dinonidImg from './assets/dinonid.png';
+import goldngoalImg from './assets/goldngoal.png';
 
 function Article({header, text, image, alt}) { 
    return (
@@ -18,6 +20,32 @@ function Article({header, text, image, alt}) {
                </h3>
                <p className="project-text">
                   {text}
+               </p>
+            </div>
+
+            <figure className="portfolio-image">
+               <img className="project-image"
+                  src={image} 
+                  alt={alt}/>
+            </figure>
+         </article>
+      </p>
+   )
+}
+
+function ArticleLink({header, text, link, image, alt}) { 
+   return (
+      <p>
+         <article className="portfolio-article">
+            <div className="portfolio-text">
+               <h3 className="project-header">
+                  {header}
+               </h3>
+               <p className="project-text">
+                  {text}
+               </p>
+               <p className="project-text">
+                  {link}
                </p>
             </div>
 
@@ -113,6 +141,31 @@ function Portfolio() {
                text = {t("description.portfolio_article6_text")}
                image = {ghost2Img}
                alt = {t("description.portfolio_article6_img_alt")}
+            />
+
+            <ArticleLink 
+               header = {t("description.portfolio_article7_header")}
+               text = {t("description.portfolio_article7_text")}
+               link = {<a href='https://inclusive-gaming.de/dinonid/'>Dinonid</a>}
+               image = {dinonidImg}
+               alt = {t("description.portfolio_article7_img_alt")}
+            />
+         </section>
+
+
+         <section className="portfolio-era">
+            <div className="portfolio-era-header">
+               <p>
+                  {t("description.portfolio_era3_header")}
+               </p>
+            </div>
+
+            <ArticleLink 
+               header = {t("description.portfolio_article8_header")}
+               text = {t("description.portfolio_article8_text")}
+               link = {<a href='https://store.steampowered.com/app/4566130/Gold_n_Goal/'>Gold'n Goal</a>}
+               image = {goldngoalImg}
+               alt = {t("description.portfolio_article8_img_alt")}
             />
          </section>
       </main>  
